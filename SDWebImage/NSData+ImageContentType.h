@@ -14,13 +14,13 @@
  *
  *  @return the content type as string (i.e. image/jpeg, image/gif)
  */
-+ (NSString *)sd_contentTypeForImageData:(NSData *)data;
++ (nullable NSString *)sd_contentTypeForImageData:(nullable NSData *)data;
 
 @end
 
 
 @interface NSData (ImageContentTypeDeprecated)
 
-+ (NSString *)contentTypeForImageData:(NSData *)data __deprecated_msg("Use `sd_contentTypeForImageData:`");
++ (nullable NSString *)contentTypeForImageData:(nullable NSData *)data __deprecated_msg("Use `sd_contentTypeForImageData:`");
 
 @end
